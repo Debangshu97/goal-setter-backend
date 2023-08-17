@@ -20,7 +20,7 @@ const goal= await Goal.create({
     user:req.user.id,
 })
 
-    res.json({messsage:"set goal"});
+     res.status(200).json(goal)
 }
 )
 const updateGoals=asyncHandler( async(req, res, )=>{
